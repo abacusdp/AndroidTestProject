@@ -33,6 +33,8 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        setTitle("Tasks");
+
 
         Intent intent = getIntent();
         String message = intent.getStringExtra("onboard_id");
@@ -40,7 +42,8 @@ public class Main2Activity extends AppCompatActivity {
 
         realm = Realm.getDefaultInstance();
         RealmResults<Task> tasks = realm.where(Task.class).findAll().sort("id", Sort.ASCENDING);
-        final TaskAdapter adapter = new TaskAdapter(this, tasks);
+        final TaskAdapter adapter;
+        adapter = new TaskAdapter(this, tasks);
 
         RecyclerView recyclerView = findViewById(R.id.task_recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));

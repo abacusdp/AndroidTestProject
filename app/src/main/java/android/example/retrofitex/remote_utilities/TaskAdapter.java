@@ -20,7 +20,7 @@ import java.util.List;
 import io.realm.Realm;
 
 public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
-    private static final String TAG = Main2Activity.class.getName();
+    private static final String TAG = TaskAdapter.class.getName();
 
     private Main2Activity activity;
     private List<Task> list;

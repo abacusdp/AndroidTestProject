@@ -13,9 +13,10 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        setTitle("Splash Activity");
 
         Handler handler = new Handler();
-        handler.postDelayed(() -> nextScreen(), 1000);
+        handler.postDelayed(() -> nextScreen(), 3000);
     }
 
     private void nextScreen(){
