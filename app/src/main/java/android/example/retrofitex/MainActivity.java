@@ -56,7 +56,16 @@ public class MainActivity extends AppCompatActivity {
         Button taskButton1 = findViewById(R.id.wifiscan_button);
         taskButton1.setOnClickListener(v -> {
             if (flag) {
-                Intent intent = new Intent(getApplicationContext(), WifiScan.class);
+                Intent intent = new Intent(getApplicationContext(), WifiScanActivity.class);
+                intent.putExtra("onboard_id", sharedpreferences.getString("onboard_id", ""));
+                startActivity(intent);
+            }
+        });
+
+        Button taskButton2 = findViewById(R.id.blescan_button);
+        taskButton2.setOnClickListener(v -> {
+            if (flag) {
+                Intent intent = new Intent(getApplicationContext(), BLEScanActivity.class);
                 intent.putExtra("onboard_id", sharedpreferences.getString("onboard_id", ""));
                 startActivity(intent);
             }
@@ -96,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
     private void verifyOTP() {
         textView.setText(getResources().getString(R.string.verifying_otp));
 
-        Call<JsonObject> call = apiInterface.doVerifyOTP("surveshoeb@gmail.com", "163380", "");
+        Call<JsonObject> call = apiInterface.doVerifyOTP("surveshoeb@gmail.com", "151821", "");
         call.enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {

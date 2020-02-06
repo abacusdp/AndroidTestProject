@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".WifiScan">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 
     <TextView
         android:id="@+id/wifi_scan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/wifi_scan_activity"
-        android:textSize="32sp"
+        android:text="@string/wifi_scan"
+        android:textSize="36sp"
         android:textAlignment="center"
-        android:background="@color/colorAccent"
         />
 
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/wifi_scan_recycler_view"
+        android:id="@+id/wifi_scan_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/wifi_scan"/>
@@ -26,3 +23,11 @@
 
 
 </RelativeLayout>
+
+
+
+
+
+
+
+

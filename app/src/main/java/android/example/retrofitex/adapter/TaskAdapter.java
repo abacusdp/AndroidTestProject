@@ -1,13 +1,11 @@
-package android.example.retrofitex.remote_utilities;
+package android.example.retrofitex.adapter;
 
 import android.example.retrofitex.Main2Activity;
 import android.example.retrofitex.R;
 import android.example.retrofitex.models.Task;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;

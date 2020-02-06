@@ -38,6 +38,13 @@
         android:layout_margin="16dp"
         android:text="@string/wifi_scan"/>
 
+        <Button
+            android:id="@+id/blescan_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/ble_scan"/>
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

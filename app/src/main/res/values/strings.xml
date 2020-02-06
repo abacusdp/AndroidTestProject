@@ -2,12 +2,15 @@
     <string name="app_name">retrofitex</string>
     <string name="task">Task</string>
     <string name="wifi_scan">Wifi Scan</string>
+    <string name="ble_scan">BLE Scan</string>
     <string name="sending_otp">Sending OTP...</string>
     <string name="verifying_otp">Verifying OTP...</string>
     <string name="success">Logged in!</string>
     <string name="invalid">Invalid User!</string>
     <string name="user_fetched">Current User Fetched!</string>
     <string name="wifi_scan_activity">WIFI SCAN</string>
+    <string name="ble_start">START SCAN</string>
+    <string name="ble_stop">STOP SCAN</string>
 
 
 </resources>
