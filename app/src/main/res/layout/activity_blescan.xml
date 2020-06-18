@@ -8,23 +8,34 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/blescan_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_holder"/>
+
+
+    <LinearLayout
+        android:id="@+id/button_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/start_scan"
+        android:layout_width="0dp"
+        android:layout_weight="1"
         android:layout_height="wrap_content"
         android:text="@string/ble_start"
-        android:layout_alignParentBottom="true"/>
+        />
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/stop_scan"
+        android:layout_width="0dp"
+        android:layout_weight="1"
         android:layout_height="wrap_content"
-
         android:text="@string/ble_stop"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
+        />
 
-
+    </LinearLayout>
 
 
 </RelativeLayout>
